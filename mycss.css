@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 800;
+    margin: 15px 0;
+}
+.container{
+    display: flex;
+}
+.container .section{
+    width: 350px;
+    margin: 20px 50px;
+}
+.section .info{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.info span , .info h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: black;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : white;
+    height: 220px;
+}
+.show i{
+    font-size: 100px;
+    color:rgba(0, 187, 255, 0.952);
+}
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    color: red;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+}
+.selection button{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background : white;
+    font-size: 33px;
+    color: rgba(0, 187, 255, 0.952);
+}
+.footer {
+    position: overflow;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+ }
+ 
+ .logo {
+    font-size: 2.5em;
+    padding: 0 0.3em;
+    display: block;
+    float: left;
+ }
+  .firstName {
+    background-color: #83caff;
+    color: #000;
+  }
+  
+  
+  /* Set vendor-specific animation name and duration on .logo class */
+  
+  .logo {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 5s;
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 5s;
+    -ms-animation-name: fadein;
+    -ms-animation-duration: 5s;
+    -o-animation-name: fadein;
+    -o-animation-duration: 5s;
+    animation-name: fadein;
+    animation-duration: 5s;
+  }
+  
+  /* Set vendor-specific keyframes for animation on load 
+     Position and opacity are animated */
+  
+  @-webkit-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-moz-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-ms-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @-o-keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+  
+  @keyframes fadein {
+    0% { opacity: 0; margin-left: -250px; }
+    100% { opacity: 1; margin-left: 0; }
+  }
+
+  .cony {
+	position: absolute;
+	width: 400px;
+  left: 100px;
+  top: 100px;
+    
+}
+.cony .ear {
+	position: absolute;
+	top:-15px;
+	height: 10px;
+	width: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.cony .ear:before,.cony .ear:after {
+	content:"";
+	position: absolute;
+	width: 35px;
+	height: 120px;
+	background: #FCBFCA;
+	border-radius: 60% 40% 50% 50% / 50%;
+	border:3px solid #333;
+	top: -55px;
+	box-shadow:#fff 0px 0px 0px 6px inset;
+}
+.cony .ear:before {
+	transform: rotate(-5deg);
+	left: -45px;
+}
+.cony .ear:after {
+	transform: rotate(5deg);
+	right: -45px;
+}
+.cony .head {
+	position: absolute;
+	width: 210px;
+	height:190px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border: 3px solid black;
+	background: #fff;
+    transform: rotate(15deg)
+    
+}
+.cony .head:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	content: "";
+	background: inherit;
+	z-index: 1;
+}
+.cony .face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.cony .face-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -4%;
+}
+.cony .cheek {
+	position: absolute;
+	width: 40px;
+	height: 25px;
+	background: #FDDBD9;
+     background: radial-gradient(RGBA(253, 163, 155, 1.00), RGBA(253, 163, 155, 0.5), RGBA(253, 163, 155, 0) 70%);
+	border-radius: 50%;
+	top:50%;	
+}
+.cony .cheek.left {
+    left:15%;
+}
+.cony .cheek.right {
+	right:15%;
+}
+.cony .mouth-outline {
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	top:45%;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+.cony .nose {
+	position: absolute;
+	margin:auto;
+    top: 45%;
+    left: 0px;
+    right: 0px;
+	width: 12px;
+	height: 12px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.cony .nose-line {
+	background: #333;
+	height: 12px;
+	width: 3px;
+	position: absolute;
+	left: 0;
+	right: 0;
+    top: 100%;
+	margin: auto;
+}
+.cony .mouth {
+	position: absolute;;
+	width: 40px;
+	height: 32px;
+    
+	left: 0px;
+	
+    top:58%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.cony .mouth-mask {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    bottom: 100%;
+    margin-bottom: -5px;
+    
+    
+    background: #fff;
+    z-index: 2;
+    border-radius: 50% / 0px 0px 100% 100%;
+    border: 3px solid black;
+    border-top: 0;
+    box-sizing: border-box;
+    
+}
+.cony .mouth .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	border-radius:50% / 100%;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	background: #D73E34;
+    border: 3px solid black;
+    border-top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.cony .mouth .inner:before {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 15px;
+	border-radius: 50%;
+	background: #F89A8C;
+	bottom:-1px;
+	left:50%;
+	margin-left:-20px;
+}
+
+
+
+.cony .impassive .mouth.border {
+	border:none;
+}
+.cony .impassive .mouth {
+	position: relative;
+	width: 2px;
+	height: 2px;
+	left: 0px;
+	top:-1px;
+}
+.cony .impassive .mouth:before, .impassive .mouth:after {
+	position:absolute;
+	content: "";
+	top:0;
+	left:-1;
+	transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	
+	transform: rotate(30deg);
+	background: #333;
+	height: 12px;
+	width: 3px;
+	border-radius: 1px;
+}
+.cony .impassive .mouth:after {
+	transform: rotate(-40deg);
+}
+.cony .body {
+	position: absolute;
+	width: 100px;
+	box-sizing: border-box;
+	
+	left: 0;
+	right: 0;
+	top: 160px;
+	margin: auto;
+		position: absolute;
+	left:-5px;
+	width: 100px;
+	height: 130px;
+	border:3px solid #333;
+	
+	border-radius: 0% 0% 50% 50% / 0px 0px 10% 10%;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: -1;
+    
+    transform-origin: 50% 0px;
+    transform:rotate(-5deg)
+}
+.cony .body:before {
+	position: absolute;
+	background: inherit;
+	border-radius: inherit;
+	width: 100%;
+	height: 100%;
+	content: "";
+	left:0;
+	right: 0;
+	z-index: 3;
+}
+.cony .mask {
+
+	position: absolute;
+	width: 90%;
+	height: 40px;
+	top:0px;
+	background: #fff;
+	
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 3;
+}
+.cony .arm {
+	position: absolute;
+	width: 40px;
+	height: 100px;
+	top:1px;
+	border-radius: 50% / 0% 0% 70% 70%;	
+	transform-origin: 50% 20px;
+	transform: rotate(130deg);
+
+	background: #fff;
+	border: 3px solid #333;
+    border-top: 0;
+	z-index: 2;
+}
+
+.cony .arm.left {
+	left:-25px;
+}
+.cony .arm.right {
+	right:-25px;
+	transform: rotate(-130deg)
+}
+.cony .legs {
+	position: absolute;
+	top:90%;
+	width: 100%;
+	z-index: 0;
+}
+.cony .leg {
+	position: absolute;
+	width: 47px;
+	
+	top:-20px;
+
+	transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	
+	border-top: none;
+	background: #fff;
+	border-radius: 0px 0px 20% 20%;
+}
+
+.cony .shank, .cony .joint, .cony .femur {
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    left: -3px;
+}
+.cony .femur {
+    padding-top: 30px;
+    height: 23.5px;
+    left: 0;
+    transform-origin: 50% 23.5px;
+    border-top-left-radius: 50% 23.5px;
+    border-top-right-radius: 50% 23.5px;
+}
+.cony .femur:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    border-radius: inherit;
+}
+.cony .joint {
+    border: 3px solid #333;
+    width: 100%;
+    height: 47px;
+    border-radius: 50%;
+}
+
+.cony .shank {
+    top: 50%;
+    height: 45px;
+    transform-origin: 50% 0px;
+}
+.cony .shank:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	z-index: 2;
+}
+.cony .leg.left {
+	left:-3px;
+}
+.cony .leg.right {
+	right:3px;
+	z-index: 3;
+}
+.cony .foot{
+	position: absolute;
+	content: "";
+	width: 130%;
+	height: 50px;
+	border:3px solid #333;
+	border-radius: 50%;
+	bottom: -20px;
+	right:-12%;
+	background: inherit;
+	transform-origin: 70% 50%;
+	transform: rotate(-20deg);
+}
+.cony .legRight .femur {
+    transform: rotate(30deg);
+}
+
+.cony .eyebrows {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+.cony .eyebrow {
+    position: absolute;
+    width:30px;
+    height: 20px;
+    overflow: hidden;
+}
+.cony .eyebrow:before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    border: 2px solid black;
+    
+    box-sizing: border-box;
+    border-radius: 50%;
+    bottom: 0px;
+}
+
+.cony .eyebrow.left:before {
+    left:-50px;
+}
+.cony .eyebrow.right:before {
+    right: -50px;
+    
+}
+
+.eyes.dot {
+    position: absolute;
+    top:35%;
+    width: 100%;
+}
+.eyes.dot:before, .eyes.dot:after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background: #333;
+}
+.eyes.dot:before {
+    left: 35%;
+}
+.eyes.dot:after {
+    right: 35%;
+}
+.eyes.laugh {
+    position: absolute;
+    top:35%;
+    width: 100%;
+    
+}
+.cony .laugh .eye {
+    position: absolute;
+    width: 30px;
+}
+.cony .laugh .eye [class^="eye"]{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-radius:2px;
+    background: #000;
+}
+
+.cony .eye1 {
+
+}
+.cony .eye2 {
+    top:3px;
+    width:42px;
+    left: 4px;
+}
+.cony .eye3 {
+    top:6px;
+    width:43px;
+}
+.cony .eye4 {
+    top:9px;
+    left:3px;
+}
+.cony .eye5 {
+    top:12px;
+    width:44px;
+}
+.cony .eye6 {
+    top:15px;
+    left: 2px;
+}
+
+.cony .eyebrow.left {
+    left: 25%;
+}
+
+.cony .eyebrow.right {
+    right: 27%;
+}
+.cony .laugh .eye.left {
+    left: 25%;
+}
+.cony .laugh .eye.right {
+    right: 27%;
+}
+
+
+
+  
+  
